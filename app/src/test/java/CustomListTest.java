@@ -55,4 +55,12 @@ public class CustomListTest {
         cityList.delete(city);
         assertFalse(cityList.hasCity(city));
     }
+
+    @Test
+    public void testCountCities() {
+        CustomList cityList = new CustomList(null, new ArrayList<City>());
+        assertEquals(0, cityList.countCities());
+        cityList.addCity(new City("to be or", "not to be"));
+        assertEquals(1, cityList.countCities());
+    }
 }
