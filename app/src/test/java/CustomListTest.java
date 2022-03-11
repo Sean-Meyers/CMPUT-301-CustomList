@@ -1,10 +1,8 @@
 import static org.junit.Assert.assertEquals;
-
 import com.example.simpleparadox.listycity.City;
 import com.example.simpleparadox.listycity.CustomList;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 
 import java.util.ArrayList;
 
