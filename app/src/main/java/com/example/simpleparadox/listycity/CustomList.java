@@ -78,10 +78,9 @@ public class CustomList extends ArrayAdapter<City> {
      *      If the city is not in the list.
      */
     public void delete(City city) {
-        //if (!hasCity(city)) {
-        //    throw new IllegalArgumentException();
-        //}
-        //cities.remove(city);
-        return;
+        if (!hasCity(city)) {
+            throw new IllegalArgumentException();
+        }
+        cities.remove(city);
     }
 }
