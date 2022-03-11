@@ -19,7 +19,7 @@ public class CustomListTest {
 
     private CustomList mockCityList() {
         CustomList cityList = new CustomList(null, new ArrayList<City>());
-        cityList.add(mockCity());
+        cityList.addCity(mockCity());
         return cityList;
     }
 
@@ -40,7 +40,7 @@ public class CustomListTest {
 
         City city = new City("hello", "world");
         assertFalse(cityList.hasCity(city));
-        cityList.add(city);
+        cityList.addCity(city);
         assertTrue(cityList.hasCity(city));
     }
 
@@ -51,7 +51,7 @@ public class CustomListTest {
         //assertThrows(IllegalArgumentException.class, () -> {
         //    cityList.delete(city);
         //});
-        cityList.add(city);
+        cityList.addCity(city);
         cityList.delete(city);
         assertFalse(cityList.hasCity(city));
     }
