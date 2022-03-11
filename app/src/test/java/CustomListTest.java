@@ -35,7 +35,7 @@ public class CustomListTest {
     }
 
     @Test
-    void testHasCity() {
+    public void testHasCity() {
         CustomList cityList = mockCityList();
 
         City city = new City("hello", "world");
@@ -45,7 +45,7 @@ public class CustomListTest {
     }
 
     @Test
-    void testDelete() {
+    public void testDelete() {
         CustomList cityList = mockCityList();
         City city = new City("ipsum", "lorem");
         //assertThrows(IllegalArgumentException.class, () -> {
